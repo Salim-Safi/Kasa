@@ -1,0 +1,28 @@
+.tag{
+    border-radius: 10px;
+    background-color: #FF6060;
+    margin: 15px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location .tagcontent p {
+    padding:5px 25px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    color: white !important;
+}
+
+@media (max-width:650px) {
+    .tag{
+        border-radius: 5px;
+        height: 18px;
+    }
+
+   .location .tagcontent .tag p {
+        font-size: 10px;
+   }
+}

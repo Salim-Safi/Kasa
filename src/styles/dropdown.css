@@ -1,0 +1,82 @@
+.drop{
+    position: relative;
+    flex: 1 0 20%;
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    border-radius: 10px;
+    padding: 0 18px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dropdcontent{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.drop p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: white;
+    margin: 0;
+    user-select: none;
+}
+
+.drop img {
+    margin: 0;
+    height: 28px;
+    width: 28px ;
+    user-select: none;
+}
+
+.dropc{
+    transform: translateY(-10px);
+    flex: 1 0 20%;
+    min-width: 245px;
+    background: #F7F7F7;
+    padding: 28px 18px 19px 18px;
+    height: 100%;
+}
+
+
+.dropc li{
+    list-style: none;
+}
+.dropc li,p {
+    margin: 0;
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+@media (max-width:650px) {
+    .drop {
+        height: 30px ;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    .dropdcontent{
+        border-radius: 5px;
+    }
+    .dropc{
+        padding: 28px 5px 19px 18px;
+        border-radius: 5px;
+    }
+    .drop p {
+        font-size: 13px;
+    }
+    .drop img {
+        height: 15px;
+        width: 15px ;
+    }
+    .dropc li,p {
+        font-size: 12px;
+    }
+}

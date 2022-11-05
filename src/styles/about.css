@@ -1,0 +1,43 @@
+.img-about{
+    height: 223px;
+    margin: 63px 100px 0 100px;
+    background-image: url(../images/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.jpg);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.overlay-about{
+    position: relative;
+    width: auto;
+    height: 223px;
+}
+
+.overlay-about::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+}
+
+@media (max-width:800px) {
+    .img-about{
+        margin: 20px 20px 0 20px;
+
+    }
+}
+
+@media (max-width:500px) {
+    .img-about{
+        height: 223px;
+        border-radius: 10px;
+        background-image: url(../images/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png);
+        margin: 20px 20px 0 20px;
+    }
+
+    .overlay-about::after{
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,69 @@
+.img-header{
+    height: 223px;
+    margin: 63px 100px 0 100px;
+    background-image: url(../images/banniere.png);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.img-header .overlay h1{
+    position: relative;
+    margin: 0;
+    padding-top: 65px;
+    text-align: center ;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    color: #FFFF;
+    z-index: 1;
+}
+
+.overlay{
+    position: relative;
+    width: auto;
+    height: 223px;
+}
+
+.overlay::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+}
+
+/*           Responsive           */
+
+
+/*     TABLET  */
+@media (max-width: 800px) {
+    .img-header{
+        margin: 20px 20px 0 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-header{
+       height: 111px;
+       border-radius: 10px;
+       background-image: url(../images/IMGR.png);
+    }
+
+    .overlay{
+        height: 111px;
+    }
+
+    .overlay::after{
+        border-radius: 10px;
+    }
+
+    .img-header .overlay h1{
+        padding-top: 30px;
+        font-size: 24px;
+        
+    }
+}

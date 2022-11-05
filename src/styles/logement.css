@@ -1,0 +1,135 @@
+.content-logement{
+    display: flex;
+    justify-content: space-between;
+    margin:30px 100px 0 100px ;
+}
+
+.location{
+    width: 70%;
+}
+.location h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.location p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.host-stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.host {
+display: flex;
+align-items: center;
+width: 140px;
+}
+
+.host p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.host img {
+    object-fit: cover;
+    border-radius: 36px;
+    width: 64px;
+    height: 64px;
+}
+
+.stars img {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.informations{
+    display: flex;
+    margin:30px 100px 0 100px ;
+    justify-content: space-between;
+}
+
+.info1{
+    flex: 1 0 20%;
+    margin-right: 25px;
+}
+
+.info2{
+    flex: 1 0 20%;
+    margin-left: 25px;
+}
+
+.tagcontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:800px) {
+    .content-logement{
+        margin:30px 20px 0 20px ;
+        flex-direction: column;
+    }
+    .informations{
+        margin:30px 20px 0 20px ;
+    }
+    .host-stars {
+        flex-direction: row-reverse;
+        margin-top: 10px;
+    }
+
+    .location{
+        width: auto;
+    }
+}
+@media (max-width:650px) {
+    .content-logement{
+        flex-direction: column;
+    }
+    .location h1 {
+        font-size: 18px;
+    }
+    .location p {
+        font-size: 14px;
+    }
+    .host-stars {
+        flex-direction: row-reverse;
+    }
+    .host{
+        width: 90px;
+    }
+    .host p {
+        font-size: 12px;
+    }
+    .host img {
+        width: 32px;
+        height: 32px;
+    }
+    .stars img {
+        margin-top: 0px;
+        height: 15px;
+        width: 15px;
+    }
+    .informations{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .info1 , .info2 {
+        border-radius: 5px;
+        margin: 0;
+    }
+}
