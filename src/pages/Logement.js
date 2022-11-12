@@ -7,7 +7,7 @@ import Tag from "../components/Tag";
 import "../styles/logement.css";
 import Etoile from "../images/EtoileR.png";
 import EtoileG from "../images/EtoileG.png";
-import Dropdown from "../components/Dropdown";
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 
 const Logement = () => {
@@ -53,14 +53,20 @@ const Logement = () => {
         </div>
         <div className="informations">
           <div className="info1">
-            <Dropdown
+            <Collapse
               titre="Description"
+              class1="dropdcontent"
+              class2="drop"
+              class3="dropc"
               contenue={<p>{thisLogement.description}</p>}
             />
           </div>
           <div className="info2">
-            <Dropdown
+            <Collapse
               titre="Équipements"
+              class1="dropdcontent"
+              class2="drop"
+              class3="dropc"
               contenue={thisLogement.equipments.map((eqpm, index) => (
                 <li key={index}>{eqpm}</li>
               ))}

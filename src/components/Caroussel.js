@@ -9,10 +9,13 @@ const Caroussel = ({ thisLogement }) => {
 
   const nextSlide = () => {
     setcurrent(current === length - 1 ? 0 : current + 1);
+    console.log(current);
+    console.log(length);
   };
 
   const prevSlide = () => {
     setcurrent(current === 0 ? length - 1 : current - 1);
+    console.log(current);
   };
 
   const showArray = length === 1 ? true : false;

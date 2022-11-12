@@ -1,5 +1,5 @@
 import React from "react";
-import Dropdownlarge from "../components/Dropdownlarge";
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/about.css";
@@ -13,7 +13,13 @@ const About = () => {
         <div className="overlay-about"></div>
       </div>
       {collapse.map((collapse) => (
-        <Dropdownlarge key={collapse.id} collapse={collapse} />
+        <Collapse
+          titre={collapse.titre}
+          class2="droplarge"
+          class3="dropcontent"
+          contenue={<p>{collapse.contenue}</p>}
+          key={collapse.id}
+        />
       ))}
       <Footer />
     </div>
